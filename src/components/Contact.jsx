@@ -2,17 +2,17 @@ import React from 'react'
 
 function Contact() {
     return (
-        <div className='flex flex-col gap-y-4 w-full p-6 bg-[#F5F5F5] rounded-lg shadow-md' id='contact'>
-            <div className='text-2xl text-blue-600 font-semibold tracking-wide leading-none p-2 rounded'>
+        <div className='flex flex-col gap-y-2 sm:gap-y-3 w-full py-4 px-2 sm:p-6 bg-[#123456] rounded-xl shadow-md' id='contact'>
+            <div className='text-xl sm:text-2xl text-white font-semibold tracking-wide leading-none px-3 py-2 sm:p-2 rounded'>
                 Contact
             </div>
-            <div className='px-2'>
-                <div className='border-l-2 border-l-blue-600 flex gap-5 flex-col px-4'>
+            <div className='sm:px-2'>
+                <div className='border-0 sm:border-l-2 border-l-white flex gap-5 flex-col px-3 sm:px-4'>
                     <div className="flex flex-col gap-y-1">
-                        <p className="text-gray-700"><strong>Email:</strong> <a href="mailto:rudrapatelrp14@gmail.com" className="text-blue-500 hover:underline">rudrapatelrp14@gmail.com</a></p>
-                        <p className="text-gray-700"><strong>Phone:</strong> +1 (226) 975-9142</p>
-                        <p className="text-gray-700"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rudra14/" target={'_blank'} className="text-blue-500 hover:underline">linkedin.com/in/rudra14/</a></p>
-                        <p className="text-gray-700"><strong>GitHub:</strong> <a href="https://github.com/Rudra1402" target={'_blank'} className="text-blue-500 hover:underline">github.com/rudra14/</a></p>
+                        <p className="text-white"><strong>Email:</strong> <a href="mailto:rudrapatelrp14@gmail.com" className="text-blue-200 hover:underline">rudrapatelrp14@gmail.com</a></p>
+                        <p className="text-white"><strong>Phone:</strong> +1 (226) 975-9142</p>
+                        <p className="text-white"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rudra14/" target={'_blank'} className="text-blue-200 hover:underline">linkedin.com/in/rudra14/</a></p>
+                        <p className="text-white"><strong>GitHub:</strong> <a href="https://github.com/Rudra1402" target={'_blank'} className="text-blue-200 hover:underline">github.com/rudra14/</a></p>
                     </div>
                     <div className="border-t border-gray-300 rounded-xl">
                         <iframe
