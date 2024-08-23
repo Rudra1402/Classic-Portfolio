@@ -64,6 +64,14 @@ export const projects = [
         ghUrl: "https://github.com/Rudra1402/FreelanceMarketplace"
     },
     {
+        name: 'Credit Limit Optimizer',
+        category: 'Personal',
+        techStack: ['Python', 'Machine Learning', 'JavaScript'],
+        desc: 'The project includes data preprocessing, model training, and deployment via a Flask web application. The process begins with loading and preparing data, followed by training a RandomForestRegressor model. The trained model and preprocessing steps are saved as pickle files.',
+        isOnGithub: true,
+        ghUrl: 'https://github.com/Rudra1402/Credit-Limit-Optimizer'
+    },
+    {
         name: 'Project Manager',
         category: 'Personal',
         techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
@@ -111,6 +119,14 @@ export const projects = [
         isOnGithub: true,
         ghUrl: "https://github.com/Rudra1402/GossipCorner"
     },
+    {
+        name: 'Fun JS projects',
+        category: 'Personal',
+        techStack: ['JavaScript', 'HTML', 'CSS'],
+        desc: 'This repo contains some of the very first HTML, CSS, JS projects that I had developed which marked the beginning of my Web Development journey.',
+        isOnGithub: true,
+        ghUrl: 'https://github.com/Rudra1402/HTML-CSS-JavaScript'
+    }
     // {
     //     name: 'QR Code Generator',
     //     category: 'Generator Tool',
