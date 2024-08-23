@@ -19,51 +19,53 @@ function About() {
                                 className='h-24 w-24 sm:h-36 sm:w-36 rounded-full shadow-md'
                             />
                             <div className=''>
-                                Hello! I'm <b>Rudra Patel</b>, a passionate Software Developer with a diverse set of skills and a deep fascination for Web Technologies like JavaScript and Python. Additionally, I have worked on Programming Languages like C++, Java, and C.
-                                Throughout my career, I've had the privilege of working on a wide range of projects, from Bankify to E-Vehicle Depot. Each experience has allowed me to hone my craft, expand my knowledge, and develop a unique problem-solving approach.
+                                Hello! I'm <b>Rudra Patel</b>, a dedicated Software Developer with a passion for Web Technologies, particularly JavaScript and Python. My journey has taken me through diverse projects like Bankify and E-Vehicle Depot, allowing me to refine my skills in languages such as C++, Java, and C.
+                                <hr className='my-1 border border-transparent' />
+                                I thrive on creating impactful solutions that push boundaries and deliver exceptional results. I'm eager to connect and explore how I can contribute to your next project. Feel free to check out my portfolio and reach out for collaboration!
                             </div>
                         </div>
-                        <br />
+                        {/* <br />
                         <div>
                             What truly drives me is the opportunity to create meaningful solutions that make a tangible impact. Whether it's JavaScript or Python, I'm constantly seeking new ways to push the boundaries of what's possible and deliver exceptional results for my clients and collaborators. I'm excited to connect with you and discuss how I can contribute to your next project. Feel free to explore my portfolio and don't hesitate to reach out if you have any questions or would like to collaborate.
-                        </div>
-                        <br />
-                        <div className='flex flex-wrap gap-2.5 items-center justify-center'>
+                        </div> */}
+                        <hr className='my-4 border border-transparent' />
+                        <div className='flex flex-wrap gap-3 items-center justify-center'>
+                            <b>Connect with me&nbsp;&nbsp;-</b>
                             <a
                                 href="https://github.com/Rudra1402"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className='flex items-center w-2/3 sm:w-1/2 md:w-1/4 text-sm sm:text-base justify-center gap-1 py-1.5 px-3 bg-[#24292e] text-white rounded hover:bg-gray-800 transition duration-300 ease-in-out'
+                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#24292e] text-white rounded hover:bg-gray-800 transition duration-300 ease-in-out'
                             >
-                                <FaGithub /> GitHub
+                                <FaGithub />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/rudra14"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className='flex items-center w-2/3 sm:w-1/2 md:w-1/4 text-sm sm:text-base justify-center gap-1 py-1.5 px-3 bg-[#0077b5] text-white rounded hover:bg-blue-800 transition duration-300 ease-in-out'
+                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#0077b5] text-white rounded hover:bg-blue-800 transition duration-300 ease-in-out'
                             >
-                                <FaLinkedin /> LinkedIn
+                                <FaLinkedin />
                             </a>
                             <a
                                 href="mailto:rudrapatelrp14@gmail.com"
-                                className='flex items-center w-2/3 sm:w-1/2 md:w-1/4 text-sm sm:text-base justify-center gap-1 py-1.5 px-3 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 ease-in-out'
+                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 ease-in-out'
                             >
-                                <SiGmail /> Email
+                                <SiGmail />
                             </a>
                             <a
                                 href='https://x.com/rp14ok'
-                                className='flex items-center w-2/3 sm:w-1/2 md:w-1/4 text-sm sm:text-base justify-center gap-1 py-1.5 px-3 bg-[#1DA1F2] text-white rounded hover:bg-[#1DA1F2DE] transition duration-300 ease-in-out'
+                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#1DA1F2] text-white rounded hover:bg-[#1DA1F2DE] transition duration-300 ease-in-out'
                             >
-                                <FaTwitter /> Twitter
+                                <FaTwitter />
                             </a>
                             <a
                                 href="https://www.instagram.com/rudra.patel.14"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className='flex items-center w-2/3 sm:w-1/2 md:w-1/4 text-sm sm:text-base justify-center gap-1 py-1.5 px-3 bg-[#d62976] text-white rounded hover:bg-pink-600 transition duration-300 ease-in-out'
+                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#d62976] text-white rounded hover:bg-pink-600 transition duration-300 ease-in-out'
                             >
-                                <FaInstagram /> Instagram
+                                <FaInstagram />
                             </a>
                         </div>
                     </div>
