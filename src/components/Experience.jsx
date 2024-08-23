@@ -14,14 +14,14 @@ function Experience() {
                             key={index}
                             className='p-4 flex flex-col gap-y-2 shadow-md rounded-md bg-white'
                         >
-                            <div className='flex md:flex-row flex-col items-start md:items-center justify-between gap-3 md:gap-4'>
+                            <div className='flex lg:flex-row flex-col items-start lg:items-center justify-between gap-3 lg:gap-4'>
                                 <div className='flex items-end justify-start gap-2'>
                                     <div
                                         className='text-xl text-[#123456] leading-none font-semibold cursor-pointer'
                                     >
                                         {exp.role}
                                     </div>
-                                    <div className='text-gray-600 leading-none'>
+                                    <div className='hidden sm:block text-gray-600 leading-none'>
                                         ({exp.location})
                                     </div>
                                 </div>
@@ -29,8 +29,13 @@ function Experience() {
                                     {exp.duration}
                                 </div>
                             </div>
-                            <div className='text-gray-600'>
-                                {exp.company}
+                            <div className='flex items-center justify-start gap-1'>
+                                <div className='text-gray-600'>
+                                    {exp.company}
+                                </div>
+                                <div className='block sm:hidden text-gray-600 leading-none'>
+                                    ({exp.location})
+                                </div>
                             </div>
                             <div className='px-3 flex flex-col gap-y-2'>
                                 {exp.desc.map((d, idx) => (

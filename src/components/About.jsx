@@ -28,45 +28,47 @@ function About() {
                         <div>
                             What truly drives me is the opportunity to create meaningful solutions that make a tangible impact. Whether it's JavaScript or Python, I'm constantly seeking new ways to push the boundaries of what's possible and deliver exceptional results for my clients and collaborators. I'm excited to connect with you and discuss how I can contribute to your next project. Feel free to explore my portfolio and don't hesitate to reach out if you have any questions or would like to collaborate.
                         </div> */}
-                        <hr className='my-4 border border-transparent' />
+                        <hr className='my-2.5 md:my-4 border border-transparent' />
                         <div className='flex flex-wrap gap-2.5 items-center justify-center'>
                             <b>Connect with me&nbsp;&nbsp;~</b>
-                            <a
-                                href="https://github.com/Rudra1402"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#24292e] text-white rounded hover:bg-gray-800 transition duration-300 ease-in-out'
-                            >
-                                <FaGithub />
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/rudra14"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#0077b5] text-white rounded hover:bg-blue-800 transition duration-300 ease-in-out'
-                            >
-                                <FaLinkedin />
-                            </a>
-                            <a
-                                href="mailto:rudrapatelrp14@gmail.com"
-                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 ease-in-out'
-                            >
-                                <SiGmail />
-                            </a>
-                            <a
-                                href='https://x.com/rp14ok'
-                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#1DA1F2] text-white rounded hover:bg-[#1DA1F2DE] transition duration-300 ease-in-out'
-                            >
-                                <FaTwitter />
-                            </a>
-                            <a
-                                href="https://www.instagram.com/rudra.patel.14"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#d62976] text-white rounded hover:bg-pink-600 transition duration-300 ease-in-out'
-                            >
-                                <FaInstagram />
-                            </a>
+                            <div className='flex flex-wrap gap-2.5 items-center justify-center'>
+                                <a
+                                    href="https://github.com/Rudra1402"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#24292e] text-white rounded hover:bg-gray-800 transition duration-300 ease-in-out'
+                                >
+                                    <FaGithub />
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/rudra14"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#0077b5] text-white rounded hover:bg-blue-800 transition duration-300 ease-in-out'
+                                >
+                                    <FaLinkedin />
+                                </a>
+                                <a
+                                    href="mailto:rudrapatelrp14@gmail.com"
+                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 ease-in-out'
+                                >
+                                    <SiGmail />
+                                </a>
+                                <a
+                                    href='https://x.com/rp14ok'
+                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#1DA1F2] text-white rounded hover:bg-[#1DA1F2DE] transition duration-300 ease-in-out'
+                                >
+                                    <FaTwitter />
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/rudra.patel.14"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#d62976] text-white rounded hover:bg-pink-600 transition duration-300 ease-in-out'
+                                >
+                                    <FaInstagram />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
