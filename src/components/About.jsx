@@ -29,8 +29,8 @@ function About() {
                             What truly drives me is the opportunity to create meaningful solutions that make a tangible impact. Whether it's JavaScript or Python, I'm constantly seeking new ways to push the boundaries of what's possible and deliver exceptional results for my clients and collaborators. I'm excited to connect with you and discuss how I can contribute to your next project. Feel free to explore my portfolio and don't hesitate to reach out if you have any questions or would like to collaborate.
                         </div> */}
                         <hr className='my-4 border border-transparent' />
-                        <div className='flex flex-wrap gap-3 items-center justify-center'>
-                            <b>Connect with me&nbsp;&nbsp;-</b>
+                        <div className='flex flex-wrap gap-2.5 items-center justify-center'>
+                            <b>Connect with me&nbsp;&nbsp;~</b>
                             <a
                                 href="https://github.com/Rudra1402"
                                 target="_blank"
