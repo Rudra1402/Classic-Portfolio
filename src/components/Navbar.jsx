@@ -19,46 +19,46 @@ function Navbar() {
 
     const navLinks = (
         <div className='bg-white p-4 absolute top-0 right-0 bottom-0 left-0'>
-            <div className='flex flex-col items-center gap-6 bg-[#123456] rounded-md h-full w-full p-5'>
-                <div className='p-2 bg-white rounded leading-none text-[#123456] font-mono text-2xl'>Rudra Patel</div>
+            <div className='flex flex-col items-center gap-4 bg-[#123456] rounded-md h-full w-full p-5'>
+                <div className='p-2 w-2/3 text-center mb-2 bg-white rounded leading-none text-[#123456] font-mono text-2xl'>Rudra Patel</div>
                 <a
                     href='#about'
-                    className='hover:border-b border-b-blue-300 text-lg leading-none'
+                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
                     onClick={() => setIsMenuOpen(false)}
                 >
                     About
                 </a>
                 <a
                     href='#experience'
-                    className='hover:border-b border-b-blue-300 text-lg leading-none'
+                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
                     onClick={() => setIsMenuOpen(false)}
                 >
                     Experience
                 </a>
                 <a
                     href='#projects'
-                    className='hover:border-b border-b-blue-300 text-lg leading-none'
+                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
                     onClick={() => setIsMenuOpen(false)}
                 >
                     Projects
                 </a>
                 <a
                     href='#education'
-                    className='hover:border-b border-b-blue-300 text-lg leading-none'
+                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
                     onClick={() => setIsMenuOpen(false)}
                 >
                     Education
                 </a>
                 <a
                     href='#skills'
-                    className='hover:border-b border-b-blue-300 text-lg leading-none'
+                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
                     onClick={() => setIsMenuOpen(false)}
                 >
                     Skills
                 </a>
                 <a
                     href='#contact'
-                    className='hover:border-b border-b-blue-300 text-lg leading-none'
+                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
                     onClick={() => setIsMenuOpen(false)}
                 >
                     Contact
