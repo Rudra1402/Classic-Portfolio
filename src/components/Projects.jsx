@@ -4,7 +4,7 @@ import { projects, techSkills } from '../data'
 
 function Projects() {
     return (
-        <div className='flex flex-col gap-y-3 sm:gap-y-4 w-full py-4 px-2 sm:p-6 bg-[#123456] rounded-xl shadow-md' id='projects'>
+        <div className='flex flex-col gap-y-3 sm:gap-y-4 w-full py-3 px-2 sm:p-6 bg-[#123456]' id='projects'>
             <div className='text-xl sm:text-2xl text-white font-semibold tracking-wide leading-none px-3 py-2 sm:p-2 rounded'>
                 Projects
             </div>

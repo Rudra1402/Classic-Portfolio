@@ -11,11 +11,11 @@ function App() {
 
   return (
     <div className='m-0 p-0 w-screen h-screen'>
-      <div id='container' className='flex flex-col items-center w-full h-full overflow-y-auto px-4 md:p-0 gap-4 md:gap-6'>
+      <div id='container' className='flex flex-col items-center w-full h-full overflow-y-auto px-4 md:p-0 gap-3 md:gap-5'>
         <Navbar />
         <div
           id='right-container'
-          className='w-full md:w-3/4 flex flex-col gap-4 md:gap-6 rounded-lg text-[#333333] p-0 pb-8'
+          className='w-full md:w-3/4 flex flex-col rounded-xl shadow-md gap-0 md:gap-0 text-[#333333] p-0'
           style={{ scrollbarWidth: "none" }}
         >
           <About />
@@ -24,8 +24,8 @@ function App() {
           <Education />
           <Skills />
           <Contact />
-          <div className='py-4 px-8 rounded-lg text-center text-lg bg-green-600 text-white shadow-md leading-none'>Thank you for visting my portfolio!👍🏼</div>
         </div>
+        <div className='py-4 px-8 mb-6 w-3/4 rounded-lg text-center text-lg bg-green-600 text-white shadow-md leading-none'>Thank you for visting my portfolio!👍🏼</div>
       </div>
     </div>
   )

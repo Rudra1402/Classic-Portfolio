@@ -3,7 +3,7 @@ import { techSkills } from '../data'
 
 function Skills() {
     return (
-        <div className='flex flex-col gap-y-2 sm:gap-y-3 w-full py-4 px-2 sm:p-6 bg-[#123456] rounded-xl shadow-md' id='skills'>
+        <div className='flex flex-col gap-y-2 sm:gap-y-3 w-full py-3 px-2 sm:p-6 bg-[#123456]' id='skills'>
             <div className='text-xl sm:text-2xl text-white font-semibold tracking-wide leading-none sm:p-2 px-3 pt-2 pb-3 rounded'>
                 Skills
             </div>
