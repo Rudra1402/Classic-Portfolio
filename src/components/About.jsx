@@ -19,9 +19,9 @@ function About() {
                                 className='h-24 w-24 sm:h-36 sm:w-36 rounded-full shadow-md'
                             />
                             <div className=''>
-                                Hello! I'm <b>Rudra Patel</b>, a dedicated Software Developer with a passion for Web Technologies, particularly JavaScript and Python. My journey has taken me through diverse projects like Bankify and E-Vehicle Depot, allowing me to refine my skills in languages such as C++, Java, and C.
+                                I'm <b className='text-blue-800'>Rudra Patel</b>, a passionate Software Developer specializing in Web Technologies like JavaScript and Python. My experience spans projects such as Bankify and E-Vehicle Depot, where I've honed my skills in C++, Java, and C.
                                 <hr className='my-1 border border-transparent' />
-                                I thrive on creating impactful solutions that push boundaries and deliver exceptional results. I'm eager to connect and explore how I can contribute to your next project. Feel free to check out my portfolio and reach out for collaboration!
+                                I thrive on crafting innovative solutions that make a difference. Let's connect and explore how I can contribute to your next project! Check out my portfolio for more.
                             </div>
                         </div>
                         {/* <br />
