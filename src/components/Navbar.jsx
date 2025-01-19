@@ -18,51 +18,27 @@ function Navbar() {
     }, []);
 
     const navLinks = (
-        <div className='bg-white p-4 absolute top-0 right-0 bottom-0 left-0'>
-            <div className='flex flex-col items-center gap-4 bg-[#123456] rounded-md h-full w-full p-5'>
-                <div className='p-2 w-2/3 text-center mb-2 bg-white rounded leading-none text-[#123456] font-mono text-2xl'>Rudra Patel</div>
-                <a
-                    href='#about'
-                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    About
-                </a>
-                <a
-                    href='#experience'
-                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Experience
-                </a>
-                <a
-                    href='#projects'
-                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Projects
-                </a>
-                <a
-                    href='#education'
-                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Education
-                </a>
-                <a
-                    href='#skills'
-                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Skills
-                </a>
-                <a
-                    href='#contact'
-                    className='p-2 w-2/3 text-center bg-white rounded text-[#123456] text-lg leading-none'
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Contact
-                </a>
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
+            <div className="bg-[#123456] w-full max-w-sm p-5 h-full shadow-lg transform translate-x-0 transition-transform duration-300">
+                <div className="flex justify-between items-center mb-6">
+                    <div className="text-white text-xl font-bold">Rudra Patel</div>
+                    <IoMdClose
+                        className="text-white text-2xl cursor-pointer"
+                        onClick={() => setIsMenuOpen(false)}
+                    />
+                </div>
+                <nav className="flex flex-col items-start space-y-4">
+                    {["about", "experience", "projects", "education", "skills", "contact"].map((section) => (
+                        <a
+                            key={section}
+                            href={`#${section}`}
+                            className="text-white text-lg w-full hover:bg-blue-700 py-2 px-4 rounded transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            {section.charAt(0).toUpperCase() + section.slice(1)}
+                        </a>
+                    ))}
+                </nav>
             </div>
         </div>
     );
@@ -80,7 +56,8 @@ function Navbar() {
             </div>
             <div className='sm:hidden py-3 px-4 lg:p-5 flex items-center justify-end w-[50%]'>
                 {isMenuOpen ?
-                    <IoMdClose className='text-xl cursor-pointer' onClick={() => setIsMenuOpen(false)} />
+                    // <IoMdClose className='text-xl cursor-pointer' onClick={() => setIsMenuOpen(false)} />
+                    null
                     : <GiHamburgerMenu className='text-xl cursor-pointer' onClick={() => setIsMenuOpen(true)} />
                 }
             </div>

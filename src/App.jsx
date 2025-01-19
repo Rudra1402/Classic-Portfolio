@@ -25,7 +25,7 @@ function App() {
           <Skills />
           <Contact />
         </div>
-        <div className='py-4 px-8 mb-6 w-3/4 rounded-lg text-center text-lg bg-green-600 text-white shadow-md leading-none'>Thank you for visting my portfolio!👍🏼</div>
+        <div className='py-4 px-8 mb-6 w-full md:w-3/4 rounded-lg text-center text-lg bg-green-600 text-white shadow-md leading-none'>Thank you for visting my portfolio!👍🏼</div>
       </div>
     </div>
   )
