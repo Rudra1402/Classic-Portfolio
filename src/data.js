@@ -32,6 +32,14 @@ export const socials = [
 
 export const projects = [
     {
+        name: 'UWingine',
+        category: 'Academic',
+        techStack: ['NextJS', 'FastAPI', 'Docker', 'AWS', 'MongoDB'],
+        desc: 'Co-developed a highly scalable chatbot platform for the University of Windsor using an LLM model, deployed on AWS services (S3, DynamoDB, EC2, Lambda) with Docker. Leveraged FastAPI for backend and Next.js for frontend, enabling efficient query processing and accurate, reference-backed responses for university resources.',
+        isOnGithub: true,
+        ghUrl: 'https://github.com/Rudra1402/UWingine'
+    },
+    {
         name: 'Bankify',
         category: 'Personal',
         techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'Firebase', 'MongoDB'],
@@ -119,14 +127,14 @@ export const projects = [
         isOnGithub: true,
         ghUrl: "https://github.com/Rudra1402/GossipCorner"
     },
-    {
-        name: 'Fun JS projects',
-        category: 'Personal',
-        techStack: ['JavaScript', 'HTML', 'CSS'],
-        desc: 'This repo contains some of the very first HTML, CSS, JS projects that I had developed which marked the beginning of my Web Development journey.',
-        isOnGithub: true,
-        ghUrl: 'https://github.com/Rudra1402/HTML-CSS-JavaScript'
-    }
+    // {
+    //     name: 'Fun JS projects',
+    //     category: 'Personal',
+    //     techStack: ['JavaScript', 'HTML', 'CSS'],
+    //     desc: 'This repo contains some of the very first HTML, CSS, JS projects that I had developed which marked the beginning of my Web Development journey.',
+    //     isOnGithub: true,
+    //     ghUrl: 'https://github.com/Rudra1402/HTML-CSS-JavaScript'
+    // }
     // {
     //     name: 'QR Code Generator',
     //     category: 'Generator Tool',
@@ -159,14 +167,14 @@ export const projects = [
 
 export const workExp = [
     {
-        role: 'Software Developer Intern',
+        role: 'Software Developer',
         company: 'Modgenics',
         location: 'Remote',
         desc: [
             "Led the front-end development of 80% of web pages utilizing JavaScript, React, Next.js, Server-side rendering, MUI, and Tailwind CSS to develop custom components to fulfill business requirements.", "Integrated the Node.js Microservices and Python scripts based on technical specifications in a scalable SaaS architecture, maintaining and shipping code every week in a collaborative environment."
         ],
         techStack: ['ReactJS', 'NextJS', 'AWS S3', 'Tailwind CSS'],
-        duration: 'Jan 2023 - Jul 2023',
+        duration: 'Jan 2023 - Aug 2023',
         certificateUrl: 'https://media.licdn.com/dms/image/D562DAQGNv0dgoAAWYg/profile-treasury-document-cover-images_480/0/1699763169649?e=1700370000&v=beta&t=HzJUHD9x9U5e_KSOghFpyJ9KGniFdEI2f9k8ev0NGas'
     },
     {

@@ -19,7 +19,7 @@ function About() {
                                 className='h-24 w-24 sm:h-36 sm:w-36 rounded-full shadow-md'
                             />
                             <div className=''>
-                                I'm <b className='text-blue-800'>Rudra Patel</b>, a passionate Software Developer specializing in Web Technologies like JavaScript and Python. My experience spans projects such as Bankify and E-Vehicle Depot, where I've honed my skills in C++, Java, and C.
+                                I'm <b className='text-blue-800'>Rudra Patel</b>, a passionate Software Developer specializing in Web Technologies like JavaScript, Python, and their frameworks and libraries. You can check out my recent project "UWingine - A university specific chatbot" on my GitHub.
                                 <hr className='my-1 border border-transparent' />
                                 I thrive on crafting innovative solutions that make a difference. Let's connect and explore how I can contribute to your next project! Check out my portfolio for more.
                             </div>
@@ -30,7 +30,7 @@ function About() {
                         </div> */}
                         <hr className='my-2.5 md:my-4 border border-transparent' />
                         <div className='flex flex-wrap gap-2.5 items-center justify-center'>
-                            <b>Connect with me&nbsp;&nbsp;~</b>
+                            <b>Connect with me&nbsp;&nbsp;/</b>
                             <div className='flex flex-wrap gap-2.5 items-center justify-center'>
                                 <a
                                     href="https://github.com/Rudra1402"
@@ -53,20 +53,6 @@ function About() {
                                     className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 ease-in-out'
                                 >
                                     <SiGmail />
-                                </a>
-                                <a
-                                    href='https://x.com/rp14ok'
-                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#1DA1F2] text-white rounded hover:bg-[#1DA1F2DE] transition duration-300 ease-in-out'
-                                >
-                                    <FaTwitter />
-                                </a>
-                                <a
-                                    href="https://www.instagram.com/rudra.patel.14"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#d62976] text-white rounded hover:bg-pink-600 transition duration-300 ease-in-out'
-                                >
-                                    <FaInstagram />
                                 </a>
                             </div>
                         </div>
