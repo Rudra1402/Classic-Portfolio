@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -6,11 +6,18 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import { initGA, trackPageView } from './analytics'
+import Tracking from './components/Tracking'
 
 function App() {
 
+  useEffect(() => {
+    trackPageView("/")
+  }, []);
+
   return (
     <div className='m-0 p-0 w-screen h-screen'>
+      <Tracking />
       <div id='container' className='flex flex-col items-center w-full h-full overflow-y-auto px-4 md:p-0 gap-3 md:gap-5'>
         <Navbar />
         <div
