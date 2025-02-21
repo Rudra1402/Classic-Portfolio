@@ -44,9 +44,11 @@ function Navbar() {
     );
 
     return (
-        <div className='w-full md:w-3/4 min-h-16 sm:min-h-20 flex items-center bg-[#123456] text-[#fff] shadow-md overflow-hidden rounded-b-lg'>
-            <a href='#about' className='w-[50%] sm:w-[20%] h-full py-3 px-4 lg:p-5 bg-[#123456] text-center flex sm:hidden lg:flex items-center justify-start sm:justify-start underline underline-offset-4 text-xl font-mono cursor-pointer text-white'>Rudra</a>
-            <div className='w-[100%] lg:w-[80%] h-full py-5 px-6 bg-[#123456] text-lg hidden sm:flex items-center justify-center lg:justify-end gap-5'>
+        <div className='w-full md:w-3/4 min-h-16 sm:min-h-16 flex items-center justify-between bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-[#fff] shadow-md overflow-hidden rounded-b-lg'>
+            <div className='w-fit h-full p-3 flex items-center'>
+                <a href='#about' className='w-full h-fit py-1 px-2 bg-[#123456] rounded md:rounded-md text-center flex lg:flex items-center justify-start sm:justify-start text-xl font-mono cursor-pointer hover:text-blue-400 text-white'>Rudra</a>
+            </div>
+            <div className='w-fit h-full py-5 px-6 text-lg hidden sm:flex items-center justify-center lg:justify-end gap-5'>
                 {/* <a href='#about' className='hover:border-b border-b-blue-300'>About</a> */}
                 <a href='#experience' className='hover:border-b border-b-blue-300'>Experience</a>
                 <a href='#projects' className='hover:border-b border-b-blue-300'>Projects</a>

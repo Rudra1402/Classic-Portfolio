@@ -1,66 +1,58 @@
-import React from 'react'
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
-import rp from '../assets/patel.jpg';
+import rp from '../assets/rp_mini.png';
 
 function About() {
-    return (
-        <div className='flex flex-col gap-y-2 sm:gap-y-3 w-full py-3 px-2 sm:p-6 bg-[#123456] rounded-tl-xl rounded-tr-xl' id='about'>
-            <div className='text-xl sm:text-2xl text-white font-semibold tracking-wide leading-none sm:p-2 px-3 py-2 rounded'>
-                About
-            </div>
-            <div className='sm:px-2'>
-                <div className='px-3 sm:px-4 text-base sm:text-lg text-justify border-0 sm:border-l-2 border-l-white'>
-                    <div className='p-4 rounded-md bg-white shadow-md'>
-                        <div className='flex flex-col sm:flex-row items-center w-full gap-4'>
-                            <img
-                                src={rp}
-                                alt="Rudra Patel"
-                                className='h-24 w-24 sm:h-36 sm:w-36 rounded-full shadow-md'
-                            />
-                            <div className=''>
-                                I'm <b className='text-blue-800'>Rudra Patel</b>, a passionate Software Developer specializing in Web Technologies like JavaScript, Python, and their frameworks and libraries. You can check out my recent project "UWingine - A university specific chatbot" on my GitHub.
-                                <hr className='my-1 border border-transparent' />
-                                I thrive on crafting innovative solutions that make a difference. Let's connect and explore how I can contribute to your next project! Check out my portfolio for more.
-                            </div>
-                        </div>
-                        {/* <br />
-                        <div>
-                            What truly drives me is the opportunity to create meaningful solutions that make a tangible impact. Whether it's JavaScript or Python, I'm constantly seeking new ways to push the boundaries of what's possible and deliver exceptional results for my clients and collaborators. I'm excited to connect with you and discuss how I can contribute to your next project. Feel free to explore my portfolio and don't hesitate to reach out if you have any questions or would like to collaborate.
-                        </div> */}
-                        <hr className='my-2.5 md:my-4 border border-transparent' />
-                        <div className='flex flex-wrap gap-2.5 items-center justify-center'>
-                            <b>Connect with me&nbsp;&nbsp;/</b>
-                            <div className='flex flex-wrap gap-2.5 items-center justify-center'>
-                                <a
-                                    href="https://github.com/Rudra1402"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#24292e] text-white rounded hover:bg-gray-800 transition duration-300 ease-in-out'
-                                >
-                                    <FaGithub />
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/rudra14"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-[#0077b5] text-white rounded hover:bg-blue-800 transition duration-300 ease-in-out'
-                                >
-                                    <FaLinkedin />
-                                </a>
-                                <a
-                                    href="mailto:rudrapatelrp14@gmail.com"
-                                    className='flex items-center w-9 h-9 text-lg justify-center gap-1 p-0.5 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 ease-in-out'
-                                >
-                                    <SiGmail />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="flex flex-col w-full p-4 sm:p-6 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-xl" id="about">
+
+      <div className="text-2xl sm:text-3xl text-white font-semibold tracking-wide text-center mb-6">
+        About Me
+      </div>
+
+      <div className="bg-white/10 !text-white rounded-xl shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
+
+        <img
+          src={rp}
+          alt="Rudra Patel"
+          className="h-32 w-32 sm:h-40 sm:w-40 rounded-full border-4 border-blue-600 shadow-md transition-transform hover:scale-105"
+        />
+
+        <div className="text-center sm:text-left tracking-wide">
+          <p className="text-lg sm:text-lg font-medium">
+            I'm <span className="font-bold">Rudra Patel</span>, a passionate Software Developer specializing in
+            <span className="font-semibold"> JavaScript, Python</span>, and their frameworks. Check out my latest project
+            <span className="font-semibold"> "UWingine - A university-specific chatbot" </span>on my GitHub.
+          </p>
+
+          <p className="text-lg sm:text-lg font-medium mt-3">
+            I thrive on crafting <span className="font-semibold">innovative solutions</span> that make a difference.
+            Let's connect and explore how I can contribute to your next project!
+          </p>
+
+          <p className="text-lg sm:text-lg font-medium mt-3">
+            Check out my portfolio for more!
+          </p>
+
+          <div className="mt-5 flex justify-center sm:justify-start gap-3">
+            <a href="https://github.com/Rudra1402" target="_blank" rel="noopener noreferrer"
+              className="flex items-center w-10 h-10 text-xl justify-center bg-[#24292e] text-white rounded-full hover:bg-gray-800 transition-transform hover:scale-110">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/rudra14" target="_blank" rel="noopener noreferrer"
+              className="flex items-center w-10 h-10 text-xl justify-center bg-[#0077b5] text-white rounded-full hover:bg-blue-800 transition-transform hover:scale-110">
+              <FaLinkedin />
+            </a>
+            <a href="mailto:patel349@uwindsor.ca"
+              className="flex items-center w-10 h-10 text-xl justify-center bg-red-600 text-white rounded-full hover:bg-red-700 transition-transform hover:scale-110">
+              <SiGmail />
+            </a>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default About
+export default About;

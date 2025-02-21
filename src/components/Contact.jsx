@@ -1,22 +1,53 @@
-import React from 'react'
+import React from "react";
+import { BiMailSend, BiPhone, BiLinkExternal, BiMap } from "react-icons/bi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
     return (
-        <div className='flex flex-col gap-y-2 sm:gap-y-3 w-full py-3 px-2 sm:p-6 bg-[#123456] rounded-bl-xl rounded-br-xl' id='contact'>
-            <div className='text-xl sm:text-2xl text-white font-semibold tracking-wide leading-none px-3 py-2 sm:p-2 rounded'>
+        <div className="flex flex-col w-full p-4 sm:p-6 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-xl" id="contact">
+
+            <div className="text-2xl sm:text-3xl text-white font-semibold tracking-wide text-center mb-6">
                 Contact
             </div>
-            <div className='sm:px-2'>
-                <div className='border-0 sm:border-l-2 border-l-white flex gap-5 flex-col px-3 sm:px-4'>
-                    <div className="flex flex-col gap-y-1">
-                        <p className="text-white"><strong>Email:</strong> <a href="mailto:rudrapatelrp14@gmail.com" className="text-blue-200 hover:underline">rudrapatelrp14@gmail.com</a></p>
-                        <p className="text-white"><strong>Phone:</strong> +1 (226) 975-9142</p>
-                        <p className="text-white"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rudra14/" target={'_blank'} className="text-blue-200 hover:underline">linkedin.com/in/rudra14/</a></p>
-                        <p className="text-white"><strong>GitHub:</strong> <a href="https://github.com/Rudra1402" target={'_blank'} className="text-blue-200 hover:underline">github.com/rudra14/</a></p>
+
+            <div className="">
+                <div className="flex flex-col gap-4 sm:gap-6">
+
+                    <div className="flex flex-col gap-y-4 p-5 bg-white/10 backdrop-blur-md shadow-lg rounded-xl text-white">
+                        <div className="flex items-center gap-3">
+                            <BiMailSend className="text-xl text-blue-300" />
+                            <strong>Email:</strong>
+                            <a href="mailto:patel349@uwindsor.ca" className="text-blue-200 hover:underline">
+                                patel349@uwindsor.ca
+                            </a>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <BiPhone className="text-xl text-blue-300" />
+                            <strong>Phone:</strong> +1 (226) 975-9142
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <FaLinkedin className="text-xl text-blue-500" />
+                            <strong>LinkedIn:</strong>
+                            <a href="https://www.linkedin.com/in/rudra14/" target="_blank" className="text-blue-200 hover:underline flex items-center gap-1">
+                                linkedin.com/in/rudra14/ <BiLinkExternal />
+                            </a>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <FaGithub className="text-xl text-gray-300" />
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/Rudra1402" target="_blank" className="text-blue-200 hover:underline flex items-center gap-1">
+                                github.com/rudra1402 <BiLinkExternal />
+                            </a>
+                        </div>
                     </div>
-                    <div className="border-t border-gray-300 rounded-xl">
+
+                    <div className="border-t border-gray-600 pt-4">
+                        <div className="flex items-center gap-3 text-white mb-2">
+                            <BiMap className="text-xl text-green-400" />
+                            <strong>Location:</strong> Markham, Ontario
+                        </div>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5901.582625522756!2d-83.06861392543153!3d42.30431813862373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d77c6ec4bef%3A0x1a44f1192a4e41ee!2sUniversity%20of%20Windsor!5e0!3m2!1sen!2sca!4v1724815505586!5m2!1sen!2scas"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Markham,%20ON+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                             width="100%"
                             height="300"
                             frameBorder="0"
@@ -24,13 +55,14 @@ function Contact() {
                             allowFullScreen=""
                             aria-hidden="false"
                             tabIndex="0"
-                            className="rounded-lg"
+                            className="rounded-lg shadow-md"
                         ></iframe>
                     </div>
+
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default Contact;

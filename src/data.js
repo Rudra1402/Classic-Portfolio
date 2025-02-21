@@ -1,6 +1,6 @@
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaJava, FaDocker, FaJira, FaTrello, FaBootstrap } from 'react-icons/fa'
-import { BiLogoReact, BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoPostgresql, BiLogoGit, BiLogoGithub, BiLogoPython, BiLogoDjango, BiLogoTailwindCss } from 'react-icons/bi'
-import { SiExpress, SiNextdotjs, SiFlask, SiCplusplus, SiMicrosoftsqlserver, SiMysql, SiKubernetes, SiPostman, SiVisualstudiocode, SiLeetcode, SiCodeforces } from 'react-icons/si'
+import { BiLogoReact, BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoPostgresql, BiLogoGit, BiLogoGithub, BiLogoPython, BiLogoDjango, BiLogoTailwindCss, BiLogoAws, BiLogoGoogleCloud, BiLogoHeroku, BiLogoNetlify, BiLogoFirebase } from 'react-icons/bi'
+import { SiExpress, SiNextdotjs, SiFlask, SiFastapi, SiCplusplus, SiMicrosoftsqlserver, SiMysql, SiKubernetes, SiPostman, SiVisualstudiocode, SiLeetcode, SiCodeforces, SiVercel } from 'react-icons/si'
 
 export const socials = [
     {
@@ -171,7 +171,12 @@ export const workExp = [
         company: 'Modgenics',
         location: 'Remote',
         desc: [
-            "Led the front-end development of 80% of web pages utilizing JavaScript, React, Next.js, Server-side rendering, MUI, and Tailwind CSS to develop custom components to fulfill business requirements.", "Integrated the Node.js Microservices and Python scripts based on technical specifications in a scalable SaaS architecture, maintaining and shipping code every week in a collaborative environment."
+            "Led web application development for educational and financial systems using React, Next.js (Server Components), TypeScript, and Tailwind CSS, creating custom reusable UI components",
+            "Engineered scalable microservice architecture with Django, Node.js, Express.js RESTful APIs, integrating MySQL database for operations and Stripe for payment processing and security",
+            "Leveraged AWS EC2 to run Docker Images, ensuring high availability, scalability, and efficient data management for applications",
+            "Utilized Docker to containerize applications for deployment and consistency across environments",
+            "Employed Git/GitHub for source control management, maintained Agile workflows, participated in sprint planning, developed features based on user stories, and shipped code weekly",
+            "Maintained comprehensive technical software documentation, performed code reviews, provided constructive feedback to peers, demonstrating effective communication and timely task execution"
         ],
         techStack: ['ReactJS', 'NextJS', 'AWS S3', 'Tailwind CSS'],
         duration: 'Jan 2023 - Aug 2023',
@@ -182,7 +187,12 @@ export const workExp = [
         company: 'TatvaSoft',
         location: 'Remote',
         desc: [
-            "Developed a feature-rich online bookstore application from scratch utilizing HTML, CSS, React.js, Node.js, Express.js, Redux, Tailwind CSS and demonstrated ability to multitask.", "Designed the web pages 100% mobile responsive for better access across a multitude of devices, integrated back-end REST APIs for networking, relational databases like PostgreSQL for data storage management."
+            "Led full-stack development of distributed systems using React.js, Redux, JavaScript, HTML, CSS3, and Tailwind CSS for creating responsive design and improved user experience (UX)",
+            "Built robust back-end systems using Node.js and Express.js to develop server-side RESTful APIs, implementing JWT for token-based authentication and performing API integration for enhanced security",
+            "Utilized Git and GitHub for source code management, leveraging collaborative coding approach and GitHub Actions for automating front-end deployment on AWS S3 to develop client prototypes",
+            "Performed automated testing using Mocha and Postman for QA and debugging code",
+            "Managed database using Postgres, writing SQL queries and stored procedures for database design",
+            "Collaborated with cross-functional teams for smooth software delivery based on business requirements, demonstrating effective verbal communication"
         ],
         techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'PostgreSQL'],
         duration: 'Jul 2022 - Dec 2022',
@@ -196,12 +206,12 @@ export const education = [
         city: 'Windsor, ON, Canada',
         courseDegree: 'Master\'s degree',
         major: 'Applied Computing',
-        duration: 'Sep 2023 - Present',
+        duration: 'Sep 2023 - Dec 2024',
         cgpa: '3.4 / 4.0',
     },
     {
-        institute: 'Sardar Vallabhbhai Patel Institute of Technology',
-        city: 'Vasad, Gujarat, India',
+        institute: 'Gujarat Technological University',
+        city: 'Gujarat, India',
         courseDegree: 'Bachelor\'s degree',
         major: 'Information Technology',
         duration: 'Jun 2019 - May 2023',
@@ -248,6 +258,11 @@ export const techSkills = [
     {
         sname: 'ExpressJS',
         Component: SiExpress,
+        category: 'l&f'
+    },
+    {
+        sname: 'FastAPI',
+        Component: SiFastapi,
         category: 'l&f'
     },
     {
@@ -299,6 +314,31 @@ export const techSkills = [
         sname: 'Bootstrap',
         Component: FaBootstrap,
         category: 'l&f'
+    },
+    {
+        sname: 'AWS',
+        Component: BiLogoAws,
+        category: 'cloud'
+    },
+    {
+        sname: 'Firebase',
+        Component: BiLogoFirebase,
+        category: 'cloud'
+    },
+    {
+        sname: 'Vercel',
+        Component: SiVercel,
+        category: 'cloud'
+    },
+    {
+        sname: 'Netlify',
+        Component: BiLogoNetlify,
+        category: 'cloud'
+    },
+    {
+        sname: 'Heroku',
+        Component: BiLogoHeroku,
+        category: 'cloud'
     },
     {
         sname: 'Docker',

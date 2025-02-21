@@ -18,11 +18,11 @@ function App() {
   return (
     <div className='m-0 p-0 w-screen h-screen'>
       <Tracking />
-      <div id='container' className='flex flex-col items-center w-full h-full overflow-y-auto px-4 md:p-0 gap-3 md:gap-5'>
+      <div id='container' className='flex flex-col items-center w-full h-full overflow-y-auto px-3 md:p-0 gap-3 md:gap-4'>
         <Navbar />
         <div
           id='right-container'
-          className='w-full md:w-3/4 flex flex-col rounded-xl shadow-md gap-0 md:gap-0 text-[#333333] p-0'
+          className='w-full md:w-3/4 flex flex-col rounded-xl shadow-md gap-3 md:gap-4 text-[#333333] p-0'
           style={{ scrollbarWidth: "none" }}
         >
           <About />
@@ -32,7 +32,7 @@ function App() {
           <Skills />
           <Contact />
         </div>
-        <div className='py-4 px-8 mb-6 w-full md:w-3/4 rounded-lg text-center text-lg bg-green-600 text-white shadow-md leading-none'>Thank you for visting my portfolio!👍🏼</div>
+        <div className='py-4 px-8 mb-6 w-full md:w-3/4 rounded-lg text-center text-lg bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white shadow-md leading-none'>Thank you for visting my portfolio!👍🏼</div>
       </div>
     </div>
   )
