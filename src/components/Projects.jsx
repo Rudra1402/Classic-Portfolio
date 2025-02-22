@@ -30,7 +30,7 @@ function Projects() {
 
               <div className="text-blue-600 flex flex-wrap gap-1 text-sm">
                 {project.techStack.map((tech, idx) => (
-                  <span key={idx} className="bg-gray-200 px-2 py-0.5 rounded-md text-gray-700">
+                  <span key={idx} className="bg-gray-200 px-2 py-0.5 rounded text-gray-700">
                     {tech}
                   </span>
                 ))}

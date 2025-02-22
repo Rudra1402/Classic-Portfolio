@@ -22,7 +22,7 @@ function App() {
         <Navbar />
         <div
           id='right-container'
-          className='w-full md:w-3/4 flex flex-col rounded-xl shadow-md gap-3 md:gap-4 text-[#333333] p-0'
+          className='w-full md:w-11/12 lg:w-3/4 flex flex-col rounded-xl shadow-md gap-3 md:gap-4 text-[#333333] p-0'
           style={{ scrollbarWidth: "none" }}
         >
           <About />

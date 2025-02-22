@@ -29,9 +29,9 @@ function Skills() {
                                 {techSkills.filter(skill => skill.category === category.key).map((skill, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center gap-3 p-5 shadow-lg rounded-xl bg-white/10 text-white transition-transform hover:shadow-xl"
+                                        className="flex items-center gap-3 p-3 shadow-lg rounded-lg bg-white/10 text-white transition-transform hover:shadow-xl"
                                     >
-                                        <skill.Component className="text-2xl" />
+                                        <skill.Component className="text-xl" />
                                         <span className="text-lg font-medium">{skill.sname}</span>
                                     </div>
                                 ))}

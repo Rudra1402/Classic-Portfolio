@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from 'react-icons/io'
+import { MdWork, MdSchool, MdContactMail } from "react-icons/md";
+import { FaProjectDiagram } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
 
 function Navbar() {
 
@@ -18,9 +21,9 @@ function Navbar() {
     }, []);
 
     const navLinks = (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-            <div className="bg-[#123456] w-full max-w-sm p-5 h-full shadow-lg transform translate-x-0 transition-transform duration-300">
-                <div className="flex justify-between items-center mb-6">
+        <div className="fixed inset-0 bg-black bg-opacity-80 z-50">
+            <div className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] w-full max-w-sm p-5 h-full shadow-lg transform translate-x-0 transition-transform duration-300">
+                <div className="flex justify-between items-center mb-2 pb-4 border-b border-b-gray-600">
                     <div className="text-white text-xl font-bold">Rudra Patel</div>
                     <IoMdClose
                         className="text-white text-2xl cursor-pointer"
@@ -28,14 +31,21 @@ function Navbar() {
                     />
                 </div>
                 <nav className="flex flex-col items-start space-y-4">
-                    {["about", "experience", "projects", "education", "skills", "contact"].map((section) => (
+                    {[
+                        { name: "experience", icon: <MdWork className="mr-2" /> },
+                        { name: "projects", icon: <FaProjectDiagram className="mr-2" /> },
+                        { name: "education", icon: <MdSchool className="mr-2" /> },
+                        { name: "skills", icon: <GiSkills className="mr-2" /> },
+                        { name: "contact", icon: <MdContactMail className="mr-2" /> }
+                    ].map((section) => (
                         <a
-                            key={section}
-                            href={`#${section}`}
-                            className="text-white text-lg w-full hover:bg-blue-700 py-2 px-4 rounded transition-colors"
+                            key={section.name}
+                            href={`#${section.name}`}
+                            className="text-white text-center text-lg w-full hover:bg-blue-700 py-2 px-4 rounded transition-colors flex items-center gap-2"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            {section.charAt(0).toUpperCase() + section.slice(1)}
+                            {section.icon}
+                            {section.name.charAt(0).toUpperCase() + section.name.slice(1)}
                         </a>
                     ))}
                 </nav>
