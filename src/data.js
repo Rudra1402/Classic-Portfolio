@@ -79,14 +79,14 @@ export const projects = [
         isOnGithub: true,
         ghUrl: 'https://github.com/Rudra1402/Credit-Limit-Optimizer'
     },
-    {
-        name: 'Project Manager',
-        category: 'Personal',
-        techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
-        desc: 'It is a projects and APIs listing platform, a great place for developers. They can post their projects and APIs on the platform as well as they can inspire from the work of other developers available on the platform. Beginners can use the APIs posted on the platform to start their development journey.',
-        isOnGithub: true,
-        ghUrl: "https://github.com/Rudra1402/Project-Manager"
-    },
+    // {
+    //     name: 'Project Manager',
+    //     category: 'Personal',
+    //     techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    //     desc: 'It is a projects and APIs listing platform, a great place for developers. They can post their projects and APIs on the platform as well as they can inspire from the work of other developers available on the platform. Beginners can use the APIs posted on the platform to start their development journey.',
+    //     isOnGithub: true,
+    //     ghUrl: "https://github.com/Rudra1402/Project-Manager"
+    // },
     {
         name: 'Hotel Price Analysis',
         category: 'Academic',
@@ -95,14 +95,14 @@ export const projects = [
         isOnGithub: true,
         ghUrl: "https://github.com/Rudra1402/WebCrawlers"
     },
-    {
-        name: 'Communix',
-        category: 'Personal',
-        techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'PostgreSQL'],
-        desc: 'A social media site where users can share, like, comment, and report posts on their timeline along with notifications and recent activity. There is an Admin Dashboard for the admin of the site and from there the admin can manage the users, reported posts, and contact queries. A user also has a profile page with several insights.',
-        isOnGithub: true,
-        ghUrl: "https://github.com/Rudra1402/Communix"
-    },
+    // {
+    //     name: 'Communix',
+    //     category: 'Personal',
+    //     techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'PostgreSQL'],
+    //     desc: 'A social media site where users can share, like, comment, and report posts on their timeline along with notifications and recent activity. There is an Admin Dashboard for the admin of the site and from there the admin can manage the users, reported posts, and contact queries. A user also has a profile page with several insights.',
+    //     isOnGithub: true,
+    //     ghUrl: "https://github.com/Rudra1402/Communix"
+    // },
     {
         name: 'Guess The Color',
         category: 'Personal',
@@ -111,22 +111,22 @@ export const projects = [
         isOnGithub: true,
         ghUrl: "https://github.com/Rudra1402/gtc-game"
     },
-    {
-        name: 'E-Mart',
-        category: 'Personal',
-        techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'PostgreSQL'],
-        desc: 'This is an e-commerce website specifically developed for electronic gadgets. Also, all the products are available at a discounted price with several other features. Moreover, average rating based on feedback is also visible in the footer.',
-        isOnGithub: true,
-        ghUrl: "https://github.com/Rudra1402/E-Mart"
-    },
-    {
-        name: 'Gossip Corner',
-        category: 'Personal',
-        techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
-        desc: 'This is a social media website which provides one of the best platforms to share your gossips with the world and have fun together with several other features and benefits. Users can post their gossips, view gossips on their timeline, or delete their gossips.',
-        isOnGithub: true,
-        ghUrl: "https://github.com/Rudra1402/GossipCorner"
-    },
+    // {
+    //     name: 'E-Mart',
+    //     category: 'Personal',
+    //     techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'PostgreSQL'],
+    //     desc: 'This is an e-commerce website specifically developed for electronic gadgets. Also, all the products are available at a discounted price with several other features. Moreover, average rating based on feedback is also visible in the footer.',
+    //     isOnGithub: true,
+    //     ghUrl: "https://github.com/Rudra1402/E-Mart"
+    // },
+    // {
+    //     name: 'Gossip Corner',
+    //     category: 'Personal',
+    //     techStack: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    //     desc: 'This is a social media website which provides one of the best platforms to share your gossips with the world and have fun together with several other features and benefits. Users can post their gossips, view gossips on their timeline, or delete their gossips.',
+    //     isOnGithub: true,
+    //     ghUrl: "https://github.com/Rudra1402/GossipCorner"
+    // },
     // {
     //     name: 'Fun JS projects',
     //     category: 'Personal',

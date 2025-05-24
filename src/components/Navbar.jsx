@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from 'react-icons/io'
 import { MdWork, MdSchool, MdContactMail } from "react-icons/md";
@@ -54,9 +54,9 @@ function Navbar() {
     );
 
     return (
-        <div className='w-full md:w-3/4 min-h-16 sm:min-h-16 flex items-center justify-between bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-[#fff] shadow-md overflow-hidden rounded-b-lg'>
+        <div className='w-full md:w-11/12 lg:w-3/4 min-h-16 sm:min-h-16 flex items-center justify-between sm:px-2 md:px-4 border-b-4 border-blue-600 bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-[#fff] shadow-md overflow-hidden rounded-b-lg'>
             <div className='w-fit h-full p-3 flex items-center'>
-                <a href='#about' className='w-full h-fit py-1 px-2 bg-[#123456] rounded md:rounded-md text-center flex lg:flex items-center justify-start sm:justify-start text-xl font-mono cursor-pointer hover:text-blue-400 text-white'>Rudra</a>
+                <a href='#about' className='w-full h-fit py-1 px-2 bg-[#123456] rounded md:rounded-md text-center flex lg:flex items-center justify-start sm:justify-start text-xl font-mono cursor-pointer hover:text-green-400 text-white'>Rudra</a>
             </div>
             <div className='w-fit h-full py-5 px-6 text-lg hidden sm:flex items-center justify-center lg:justify-end gap-5'>
                 {/* <a href='#about' className='hover:border-b border-b-blue-300'>About</a> */}

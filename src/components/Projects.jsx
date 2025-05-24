@@ -1,49 +1,48 @@
-import React from "react";
 import { BiLink } from "react-icons/bi";
 import { projects } from "../data";
 
 function Projects() {
   return (
-    <div className="flex flex-col gap-y-4 w-full p-4 sm:p-6 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-xl" id="projects">
-
-      <div className="text-2xl sm:text-3xl text-white font-semibold tracking-wide text-center mb-6">
-        Projects
-      </div>
-
-      <div className="">
-        <div className="flex flex-wrap gap-4 sm:gap-5">
+    <section className="w-full flex flex-col items-center my-1" id="projects">
+      <div className="w-full bg-[#181e2a] rounded-2xl shadow-2xl p-8 md:p-12">
+        <h2 className="text-4xl font-extrabold text-white mb-8 text-center">Projects</h2>
+        <div className="flex flex-wrap gap-6 justify-center">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="md:w-[calc(50%-12px)] w-full p-4 md:p-5 flex flex-col gap-y-3 shadow-lg rounded-xl bg-white/10 text-white transition-transform hover:shadow-xl"
+              className="w-full md:w-[calc(50%-12px)] p-5 flex flex-col gap-3 bg-white/5 border-l-4 border-blue-600 rounded-xl shadow-lg hover:shadow-2xl transition duration-200 hover:scale-[1.02] group"
             >
               <div className="flex items-center justify-between">
-                <div className="text-xl font-semibold cursor-pointer">
-                  {project.name}
-                </div>
+                <div className="text-2xl font-semibold text-white">{project.name}</div>
                 {project.isOnGithub && (
-                  <a href={project.ghUrl} target="_blank" className="">
-                    <BiLink className="text-xl leading-none" />
+                  <a
+                    href={project.ghUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-80 group-hover:opacity-100"
+                  >
+                    <BiLink className="text-2xl text-blue-300 hover:text-blue-500 transition" />
                   </a>
                 )}
               </div>
-
-              <div className="text-blue-600 flex flex-wrap gap-1 text-sm">
+              <div className="flex flex-wrap gap-2 text-xs">
                 {project.techStack.map((tech, idx) => (
-                  <span key={idx} className="bg-gray-200 px-2 py-0.5 rounded text-gray-700">
+                  <span
+                    key={idx}
+                    className="bg-blue-600/80 text-white px-2 py-0.5 rounded font-semibold tracking-wide shadow-sm"
+                  >
                     {tech}
                   </span>
                 ))}
               </div>
-
-              <div className="overflow-hidden text-gray-200 text line-clamp-3">
+              <div className="text-gray-200 mt-1 line-clamp-3 text-base">
                 {project.desc}
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

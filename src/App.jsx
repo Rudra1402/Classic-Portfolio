@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -6,7 +6,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import { initGA, trackPageView } from './analytics'
+import { trackPageView } from './analytics'
 import Tracking from './components/Tracking'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Navbar />
         <div
           id='right-container'
-          className='w-full md:w-11/12 lg:w-3/4 flex flex-col rounded-xl shadow-md gap-3 md:gap-4 text-[#333333] p-0'
+          className='w-full md:w-11/12 lg:w-3/4 flex flex-col rounded-xl gap-3 md:gap-4 text-[#333333] p-0'
           style={{ scrollbarWidth: "none" }}
         >
           <About />
@@ -32,7 +32,7 @@ function App() {
           <Skills />
           <Contact />
         </div>
-        <div className='py-4 px-8 mb-6 w-full md:w-3/4 rounded-lg text-center text-lg bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white shadow-md leading-none'>Thank you for visting my portfolio!👍🏼</div>
+        <div className='py-4 px-8 mb-6 w-full md:w-3/4 rounded-lg text-center text-lg bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white shadow-md leading-none'>Thank you for visting my portfolio! 👍🏼</div>
       </div>
     </div>
   )

@@ -1,43 +1,31 @@
-import React from "react";
 import { education } from "../data";
 
 function Education() {
   return (
-    <div className="flex flex-col w-full p-4 sm:p-6 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-xl" id="education">
-
-      {/* Section Title */}
-      <div className="text-2xl sm:text-3xl text-white font-semibold tracking-wide text-center mb-6">
-        Education
-      </div>
-
-      {/* Education List */}
-      <div className="">
-        <div className="flex flex-col gap-4 sm:gap-5">
+    <section className="w-full flex flex-col items-center my-1" id="education">
+      <div className="w-full bg-[#181e2a] rounded-2xl shadow-2xl p-8 md:p-12">
+        <h2 className="text-4xl font-extrabold text-white mb-8 text-center">Education</h2>
+        <div className="flex flex-col gap-6">
           {education.map((edu, index) => (
             <div
               key={index}
-              className="p-6 flex flex-col gap-y-1.5 shadow-lg rounded-xl bg-white/10 text-white transition-transform hover:shadow-xl"
+              className="p-6 rounded-xl bg-white/5 border-l-4 border-blue-700 shadow-lg hover:shadow-2xl transition duration-200"
             >
-              {/* Degree & Duration */}
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
-                <div className="text-xl font-semibold tracking-wide">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <span className="text-xl font-semibold text-white">
                   {edu.courseDegree}, <span className="text-blue-400">{edu.major}</span>
-                </div>
-                <div className="text-sm">
-                  {edu.duration}
-                </div>
+                </span>
+                <span className="text-sm text-blue-200">{edu.duration}</span>
               </div>
-
-              {/* Institution & City */}
-              <div className="">
-                <div className="text-gray-100 font-semibold tracking-wide text-lg mb-1">{edu.institute}</div>
+              <div className="mt-2">
+                <div className="text-lg text-blue-300 font-bold">{edu.institute}</div>
                 <div className="text-gray-300">{edu.city}</div>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

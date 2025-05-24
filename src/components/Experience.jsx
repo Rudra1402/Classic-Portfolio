@@ -1,56 +1,36 @@
-import React from "react";
 import { workExp } from "../data";
 
-function Experience() {
+export default function Experience() {
   return (
-    <div className="flex flex-col w-full p-4 sm:p-6 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-xl" id="experience">
-
-      <div className="text-2xl sm:text-3xl text-white font-semibold tracking-wide text-center mb-6">
-        Experience
-      </div>
-
-      <div className="">
-        <div className="flex flex-col gap-4 sm:gap-5">
+    <section className="w-full flex flex-col items-center my-1" id="experience">
+      <div className="w-full bg-[#181e2a] rounded-2xl shadow-2xl p-8 md:p-12">
+        <h2 className="text-4xl font-extrabold text-white mb-8 text-center">Experience</h2>
+        <div className="flex flex-col gap-8">
           {workExp.map((exp, index) => (
             <div
               key={index}
-              className="p-6 flex flex-col gap-y-2 shadow-lg rounded-xl bg-white/10 !text-white transition-transform hover:shadow-xl"
+              className="p-6 rounded-xl bg-white/5 border-l-4 border-blue-700 shadow-lg hover:shadow-xl transition duration-200"
             >
-              <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between gap-3 lg:gap-4">
-
-                <div className="flex items-end justify-start gap-2">
-                  <div className="text-xl font-semibold cursor-pointer">
-                    {exp.role}
-                  </div>
-                  <div className="hidden sm:block text-sm">
-                    ({exp.location})
-                  </div>
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div className="flex items-end gap-2">
+                  <span className="text-2xl font-semibold text-white">{exp.role}</span>
+                  <span className="hidden md:block text-sm text-blue-200">({exp.location})</span>
                 </div>
-
-                <div className="text-base">
-                  {exp.duration}
-                </div>
+                <div className="text-base text-blue-200">{exp.duration}</div>
               </div>
-
-              <div className="flex items-center justify-start gap-2">
-                <div className="font-medium text-lg">{exp.company}</div>
-                <div className="block sm:hidden text-sm">({exp.location})</div>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="font-medium text-lg text-blue-400">{exp.company}</span>
+                <span className="block md:hidden text-sm text-blue-200">({exp.location})</span>
               </div>
-
-              <div className="px-1 md:px-2 flex flex-col gap-y-2">
+              <ul className="list-disc ml-7 mt-2 space-y-2">
                 {exp.desc.map((d, idx) => (
-                  <div key={idx} className="flex gap-2">
-                    <div className="text-blue-300">•</div>
-                    <div className="text-gray-200">{d}</div>
-                  </div>
+                  <li key={idx} className="text-gray-200">{d}</li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
-
-export default Experience;
